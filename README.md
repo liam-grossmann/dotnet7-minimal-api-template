@@ -1,0 +1,1 @@
+# dotnet7-minimal-api-template
