@@ -1,5 +1,4 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTemplate.Api", "MinimalApiTemplate.Api\MinimalApiTemplate.Api.csproj", "{3AD825FD-CAB8-44E3-9A80-420730FBB618}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTemplate.Domain", "MinimalApiTemplate.Domain\MinimalApiTemplate.Domain.csproj", "{9FD68531-93F8-4EF8-B851-8871FE665E10}"
