@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTemplate.Common",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTemplate.Data", "MinimalApiTemplate.Data\MinimalApiTemplate.Data.csproj", "{DDA4023E-C194-41D1-9BA9-53FCFC35DBE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTemplate.xUnit", "MinimalApiTemplate.xUnit\MinimalApiTemplate.xUnit.csproj", "{96295DC3-C2A6-4737-B7A2-C6F451E7A40A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,9 +29,5 @@ Global
 		{DDA4023E-C194-41D1-9BA9-53FCFC35DBE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDA4023E-C194-41D1-9BA9-53FCFC35DBE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDA4023E-C194-41D1-9BA9-53FCFC35DBE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96295DC3-C2A6-4737-B7A2-C6F451E7A40A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96295DC3-C2A6-4737-B7A2-C6F451E7A40A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96295DC3-C2A6-4737-B7A2-C6F451E7A40A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96295DC3-C2A6-4737-B7A2-C6F451E7A40A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
