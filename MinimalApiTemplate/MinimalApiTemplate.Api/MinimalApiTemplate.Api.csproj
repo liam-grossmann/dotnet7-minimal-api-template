@@ -6,8 +6,6 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
-    <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
-    <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
     <ItemGroup>
       <ProjectReference Include="..\MinimalApiTemplate.Common\MinimalApiTemplate.Common.csproj" />
       <ProjectReference Include="..\MinimalApiTemplate.Data\MinimalApiTemplate.Data.csproj" />
