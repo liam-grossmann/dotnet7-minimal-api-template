@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'appDotNet7MinimalApiTemplate'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AAFF89FA71884ED6BCC89CBEE7A3A643 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3EF48DE313A146D0B20CDA8C2AF402CA }}
           package: .
