@@ -1,5 +1,9 @@
 # dotnet7-minimal-api-template
 
+https://appdotnet7minimalapitemplate.azurewebsites.net
+
+https://appdotnet7minimalapitemplate-api.azurewebsites.net
+
 
 ## Introduction
 
