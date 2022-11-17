@@ -10,8 +10,5 @@ public static class ApiEndpoints
             app.MapGet("/", () => Results.Redirect("swagger"))
                 .ExcludeFromDescription();
         }
-        
-        app.UseApiTestEndpoints();
-        app.UseApiUserEndpoints();
     }
 }

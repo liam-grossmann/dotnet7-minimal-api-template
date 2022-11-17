@@ -2,9 +2,9 @@ namespace MinimalApiTemplate.Api.ApiEndpoints;
 
 public static class ApiTestEndpoints
 {
-    public static void UseApiTestEndpoints(this WebApplication app)
+    public static void UseApiTestEndpoints(this RouteGroupBuilder route)
     {
-        app.MapGet("/test", () => "Hello World!")
+        route.MapGet("/test", () => "Hello World!")
             .WithTags("Test")
             .WithOpenApi(openApiOperation =>
             {

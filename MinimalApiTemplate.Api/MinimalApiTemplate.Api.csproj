@@ -16,6 +16,8 @@
       <ProjectReference Include="..\MinimalApiTemplate.Domain\MinimalApiTemplate.Domain.csproj" />
     </ItemGroup>
     <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="11.3.0" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.3.0" />
       <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>

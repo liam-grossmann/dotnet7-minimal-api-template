@@ -1,4 +1,5 @@
 using MinimalApiTemplate.Api.ApiEndpoints;
+using MinimalApiTemplate.Api.ApiFilters;
 using MinimalApiTemplate.Api.ApiServices;
 using MinimalApiTemplate.Data;
 
@@ -29,8 +30,13 @@ public class Program
        app.UseHsts();
 
 
-
-        app.UseApiEndpoints();
+       app.UseApiEndpoints();
+       
+        var route = app.MapGroup("");
+        route.AddEndpointFilterFactory(ValidationFilter.ValidationFilterFactory);
+        route.UseApiTestEndpoints();
+        route.UseApiUserEndpoints();
+        
 
         app.Run();
     }

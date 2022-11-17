@@ -9,6 +9,9 @@ Training: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-api
 
 See https://github.com/schwabenlander/MinimalLibrary/blob/master/MinimalLibrary.Api/Endpoints/LibraryEndpoints.cs
 
+Validation.
+https://benfoster.io/blog/minimal-api-validation-endpoint-filters/
+
 
 ## Introduction
 
