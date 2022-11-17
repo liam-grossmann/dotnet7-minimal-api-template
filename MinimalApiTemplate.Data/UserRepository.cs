@@ -9,6 +9,11 @@ public class UserRepository : IUserRepository
     {
         return FakeUsers();
     }
+    
+    public async Task<IList<User>> GetUsersAsync()
+    {
+        return await Task.FromResult(FakeUsers());
+    }
 
     private List<User> FakeUsers()
     {

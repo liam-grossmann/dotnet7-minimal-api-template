@@ -1,3 +1,4 @@
+using MinimalApiTemplate.Api.ApiEndpoints;
 using MinimalApiTemplate.Api.ApiServices;
 using MinimalApiTemplate.Data;
 
@@ -5,10 +6,15 @@ namespace MinimalApiTemplate.Api;
 
 public class Program
 {
+    
+    private const string CorsPolicyName = "CorsPolicy";
+    
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
         builder.AddSwaggerServices();
+        builder.AddCorsServices(CorsPolicyName);
+        builder.Services.RegisterApplicationServices();
 
         var app = builder.Build();
 
@@ -18,27 +24,13 @@ public class Program
             app.UseSwaggerUI();
        // }
 
+       app.UseCors(CorsPolicyName);
+       app.UseHttpsRedirection();
+       app.UseHsts();
 
-        app.MapGet("/", () => "Hello World!")
-            .WithTags("Test")
-            .WithOpenApi(openApiOperation =>
-            {
-                openApiOperation.Summary = "Home api call";
-                openApiOperation.Description = "Displays hello world";
-                return openApiOperation;
-            })
-            .AllowAnonymous();
 
-        app.MapGet("/users", () => new UserRepository().GetUsers())
-            .WithTags("Users")
-            .WithOpenApi(openApiOperation =>
-            {
-                openApiOperation.Summary = "Gets a list of users";
-                openApiOperation.Description = "Gets a list of users. Support pagination.";
-                return openApiOperation;
-            })
-            .AllowAnonymous();
 
+        app.UseApiEndpoints();
 
         app.Run();
     }

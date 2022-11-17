@@ -5,6 +5,9 @@ https://appdotnet7minimalapitemplate.azurewebsites.net
 https://appdotnet7minimalapitemplate-api.azurewebsites.net
 
 
+Training: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-7.0
+
+
 ## Introduction
 
 .NET 7.0 Minimal Api Template is a boilerplate application that contains the following features

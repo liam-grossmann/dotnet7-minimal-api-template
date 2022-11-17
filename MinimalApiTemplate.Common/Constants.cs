@@ -1,5 +1,6 @@
 ﻿namespace MinimalApiTemplate.Common;
 
-public class Class1
+public class Constants
 {
+    
 }
