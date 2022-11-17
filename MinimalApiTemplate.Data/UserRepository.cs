@@ -5,14 +5,23 @@ namespace MinimalApiTemplate.Data;
 
 public class UserRepository : IUserRepository
 {
-    public IList<User> GetUsers()
-    {
-        return FakeUsers();
-    }
-    
     public async Task<IList<User>> GetUsersAsync()
     {
         return await Task.FromResult(FakeUsers());
+    }
+
+    public async Task<User?> GetUserByCodeAsync(string code)
+    {
+        var allUsers = await GetUsersAsync();
+        foreach (var user in allUsers)
+        {
+            if (user.Code.ToString().Equals(code, StringComparison.OrdinalIgnoreCase))
+            {
+                return user;
+            }
+        }
+
+        return null;
     }
 
     private List<User> FakeUsers()

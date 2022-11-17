@@ -4,6 +4,7 @@ namespace MinimalApiTemplate.Data.Interfaces;
 
 public interface IUserRepository
 {
-    IList<User> GetUsers();
+
     Task<IList<User>> GetUsersAsync();
+    Task<User?> GetUserByCodeAsync(string code);
 }

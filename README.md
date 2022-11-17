@@ -7,6 +7,8 @@ https://appdotnet7minimalapitemplate-api.azurewebsites.net
 
 Training: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-7.0
 
+See https://github.com/schwabenlander/MinimalLibrary/blob/master/MinimalLibrary.Api/Endpoints/LibraryEndpoints.cs
+
 
 ## Introduction
 
